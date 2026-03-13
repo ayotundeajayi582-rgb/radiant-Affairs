@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://127.0.0.1:5500/HTML%20FILES/index.html#faqs -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Planning</title>
+    <link rel="stylesheet" href="./img1.hero_files/index.css">
+    <link rel="Icon" href="./img1.hero_files/logo.jpeg" type="icon-image">
+    <link rel="stylesheet" href="./img1.hero_files/all.min.css">
+</head>
+
+<body>
+    <!-- At the top of your HTML file -->
+    <div id="site-header">
+
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RADIENT AFFairs Header</title>
+  <link rel="stylesheet" href="./img1.hero_files/all(1).min.css">
+  <style>
+  /* Header Container */
+.site-header {
+  background: rgb(62, 62, 31); /* Soft, light sage green */
+  border-bottom: 1px solid #e0d6c8;
+  padding-bottom: 24px;
+}
+
+.header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px 0 24px;
+}
+
+.header-brand {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+}
+
+.site-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.logo-title {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: 6px;
+  color: #b49b87;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
+
+.logo-sub {
+  font-size: 1rem;
+  letter-spacing: 3px;
+  color: #b49b87;
+  margin-top: 6px;
+  text-align: center;
+}
+
+/* Center: Navigation */
+.header-nav {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.header-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px 36px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav ul li a {
+  text-decoration: none;
+  color:  #92AA83;
+  font-size: 1.08rem;
+  letter-spacing: 3px;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 500;
+  padding: 2px 0;
+  transition: color 0.2s, border-bottom 0.2s;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.header-nav ul li a.active,
+.header-nav ul li a:hover {
+  color: #b49b87;
+  border-bottom: 2px solid #b49b87;
+}
+
+/* Actions: Contact & Socials */
+.header-actions {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+  min-width: 0;
+}
+
+.contact-btn {
+  background: none;
+  border: 1px solid #b49b87;
+  color: #b49b87;
+  font-size: 1.08rem;
+  letter-spacing: 2px;
+  padding: 10px 28px;
+  border-radius: 2px;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  text-transform: uppercase;
+  /* text-decoration: none; */
+}
+.contact-btn a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-btn:hover {
+  background: #b49b87;
+  color: #fff;
+}
+
+.socials a {
+  color: #b49b87;
+  font-size: 1.4rem;
+  margin-right: 12px;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.socials a:last-child {
+  margin-right: 0;
+}
+
+.socials a:hover {
+  color: #3a2e27;
+}
+
+/* Menu Toggle (Mobile) */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: #b49b87;
+  cursor: pointer;
+  margin-left: 18px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .header-bar {
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 10px;
+    position: relative; /* Ensure relative positioning for absolute children */
+  }
+  .menu-toggle {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    z-index: 100;
+    margin-left: 0;
+  }
+  .header-nav {
+    display: none;
+    width: 100%;
+    background: #f7f2eb;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 99;
+    padding: 24px 0;
+  }
+  .header-nav.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-actions {
+    margin-top: 16px;
+    gap: 16px;
+    justify-content: center;
+  }
+  .contact-btn {
+    padding: 8px 18px;
+    font-size: 1rem;
+  }
+  .site-logo {
+    width: 48px;
+    height: 48px;
+  }
+  .logo-title {
+    font-size: 1.2rem;
+  }
+  .menu-toggle {
+    display: inline-block;
+  }
+  .header-bar {
+    position: relative;
+  }
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+}
+
+.dropdown-toggle i {
+  transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-toggle i {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #ffffff 0%, #f9f6f2 100%);
+  min-width: 220px;
+  border-radius: 15px;
+  padding: 20px 0;
+  z-index: 100;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  box-shadow: 
+    0 10px 40px rgba(180, 155, 135, 0.15),
+    0 4px 15px rgba(180, 155, 135, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(180, 155, 135, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%) translateY(-10px);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #ffffff;
+  filter: drop-shadow(0 -2px 4px rgba(180, 155, 135, 0.1));
+}
+
+.dropdown-menu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.dropdown-menu li a {
+  display: flex;
+  align-items: center;
+  padding: 12px 28px;
+  color: #3a2e27;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-transform: lowercase !important;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+}
+
+.dropdown-menu li a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background: linear-gradient(135deg, #b49b87, #d4c4b0);
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+  transform-origin: bottom;
+}
+
+.dropdown-menu li a::after {
+  content: '';
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #b49b87;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+  background: linear-gradient(135deg, rgba(180, 155, 135, 0.08) 0%, rgba(180, 155, 135, 0.04) 100%);
+  color: #b49b87;
+  padding-left: 35px;
+  letter-spacing: 1.5px;
+}
+
+.dropdown-menu li a:hover::before {
+  transform: scaleY(1);
+  transform-origin: top;
+}
+
+.dropdown-menu li a:hover::after {
+  opacity: 1;
+  right: 25px;
+}
+
+.dropdown-menu li:first-child a {
+  border-radius: 15px 15px 0 0;
+}
+
+.dropdown-menu li:last-child a {
+  border-radius: 0 0 15px 15px;
+}
+
+.dropdown-menu li:first-child:last-child a {
+  border-radius: 15px;
+}
+
+/* Add subtle separator between items */
+.dropdown-menu li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 28px;
+  right: 28px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(180, 155, 135, 0.1) 50%, transparent 100%);
+}
+
+.dropdown .dropdown-menu {
+  display: none;
+}
+</style>
+
+
+
+  <header class="site-header">
+    <div class="header-bar">
+      <!-- Left: Logo and Texts -->
+      <div class="header-brand">
+        <img src="./img1.hero_files/logo.jpeg" alt="Logo" class="site-logo">
+        <div>
+          <h1 class="logo-title">RADIANT AFFAIRS</h1>
+          <span class="logo-sub">FOR THE WILD AT HEART</span>
+        </div>
+      </div>
+      <!-- Center: Navigation -->
+      <nav class="header-nav active">
+        <ul>
+          <li><a href="http://127.0.0.1:5500/HTML%20FILES/index.html" class="active">HOME</a></li>
+          <li class="dropdown">
+            <a href="http://127.0.0.1:5500/HTML%20FILES/index.html#" class="dropdown-toggle">SERVICES <i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown-menu" style="display: none;">
+              <li><a href="http://127.0.0.1:5500/HTML%20FILES/eventplanner.html">Event Planning</a></li>
+              <li><a href="http://127.0.0.1:5500/HTML%20FILES/index.html#">Venue Scouting</a></li>
+              <li><a href="http://127.0.0.1:5500/HTML%20FILES/index.html#">Vendor Coordination</a></li>
+              <li><a href="http://127.0.0.1:5500/HTML%20FILES/index.html#">Decor &amp; Styling</a></li>
+              <li><a href="http://127.0.0.1:5500/HTML%20FILES/index.html#">Consultation</a></li>
+              <li><a href="http://127.0.0.1:5500/HTML%20FILES/coaching.html">Coaching &amp; Mentoring</a></li>
+            </ul>
+          </li>
+          <li><a href="http://127.0.0.1:5500/HTML%20FILES/eventplanner.html">COLLECTION</a></li>
+          <li><a href="http://127.0.0.1:5500/HTML%20FILES/clients.html">CLIENTS</a></li>
+          <!-- <li><a href="#what-we-inspire">INSPIRATION</a></li> -->
+          <li><a href="http://127.0.0.1:5500/HTML%20FILES/Aboutus.html">ABOUT</a></li>
+          <li><a href="http://127.0.0.1:5500/HTML%20FILES/index.html#faqs">FAQS</a></li>
+          <li><a href="http://127.0.0.1:5500/HTML%20FILES/blog.html">BLOG</a></li>
+        </ul>
+
+      </nav>
+      <!-- Right: Contact & Socials -->
+      <div class="header-actions">
+        <button class="contact-btn"><a href="http://127.0.0.1:5500/HTML%20FILES/contact.html">CONTACT US</a></button>
+        <div class="socials">
+          <a href="http://127.0.0.1:5500/HTML%20FILES/index.html#"><i class="fab fa-instagram"></i></a>
+          <a href="http://127.0.0.1:5500/HTML%20FILES/index.html#"><i class="fab fa-facebook-f"></i></a>
+          <a href="http://127.0.0.1:5500/HTML%20FILES/index.html#"><i class="fab fa-twitter"></i></a>
+          <a href="http://127.0.0.1:5500/HTML%20FILES/index.html#"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+      <!-- Mobile Menu Toggle -->
+      <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </div>
+  </header>
+
+
+  <script>
+    // Dropdown menu toggle for SERVICES
+    const serviceDropdown = document.querySelector('.dropdown');
+    const serviceToggle = document.querySelector('.dropdown-toggle');
+    const serviceMenu = document.querySelector('.dropdown-menu');
+    if (serviceToggle && serviceMenu) {
+      serviceToggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        serviceMenu.style.display = serviceMenu.style.display === 'block' ? 'none' : 'block';
+      });
+      // Hide dropdown when clicking outside
+      document.addEventListener('click', function(e) {
+        if (!serviceDropdown.contains(e.target)) {
+          serviceMenu.style.display = 'none';
+        }
+      });
+    }
+    // Mobile menu toggle
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav");
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+
+    // Set active nav link based on current page filename
+    const navLinks = document.querySelectorAll('.header-nav ul li a');
+    // Get the current page's filename (e.g., 'eventplanner.html')
+    const currentFile = window.location.pathname.split('/').pop().split('\\').pop();
+    navLinks.forEach(link => {
+      let href = link.getAttribute('href');
+      // Ignore anchor links
+      if (href.startsWith('#')) {
+        link.classList.remove('active');
+        return;
+      }
+      // Get the filename part of the href
+      const hrefFile = href.split('/').pop().split('\\').pop();
+      if (hrefFile === currentFile) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  </script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+</div>
+
+    <!-- ...your page content... -->
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url(&quot;../media/architecture-3221354_1280.jpg&quot;);">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1 id="hero-text">Corporate Events &amp; Tradeshows</h1>
+            <div class="scroll-down">▼</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section reveal revealed">
+        <div class="about-header">
+            <h1>Radiant Affairs</h1>
+            <img src="./img1.hero_files/logo.jpeg" alt="Radiant Affairs Logo" class="about-logo">
+            <h2>Event Planning</h2>
+        </div>
+        <div class="divider"></div>
+
+        <p>
+            At Radiant Affairs, we believe every occasion deserves to shine. Our team of
+            passionate planners brings creativity, precision, and elegance to each event,
+            ensuring unforgettable moments for you and your guests.
+        </p>
+        <p>
+            From intimate gatherings to grand celebrations, we handle every detail with
+            care and professionalism. With our expertise in design, coordination, and
+            execution, your vision is transformed into a seamless reality.
+        </p>
+        <p>
+            Whether it’s weddings, corporate functions, or social events, Radiant Affairs
+            is committed to crafting experiences that reflect your style, values, and
+            story. With us, your event isn’t just planned—it’s illuminated.
+        </p>
+    </section>
+    <!-- Event Categories Section -->
+    <section class="virtual-event reveal revealed">
+        <div class="overlay"></div>
+        <div class="virtual-content">
+            <h1>Let’s Discuss Your Virtual Event</h1>
+            <h3>Broadcast Hybrid Interactive</h3>
+            <p>
+                Hosting a virtual event requires the same detail as an in-person event.
+                We handle all the details and produce a seamless, reliable virtual event
+                for both you and your audience.
+            </p>
+            <a href="http://127.0.0.1:5500/HTML%20FILES/" class="cta-btn">SCHEDULE A CONSULTATION</a>
+        </div>
+    </section>
+    <!-- Gallery Section -->
+    <section class="gallery-section reveal revealed">
+        <div class="gallery-grid">
+            <div class="gallery-card">
+                <img src="./img1.hero_files/stage highlight.jpg" alt="Global Event Management">
+                <div class="gallery-info">
+                    <span>Global Event Management</span>
+                    <a href="http://127.0.0.1:5500/HTML%20FILES/about-global.html" class="gallery-link">Learn More</a>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <img src="./img1.hero_files/architecture-3221354_1280.jpg" alt="Corporate Events &amp; Tradeshows">
+                <div class="gallery-info">
+                    <span>Corporate Events &amp; Tradeshows</span>
+                    <a href="http://127.0.0.1:5500/HTML%20FILES/about-corporate.html" class="gallery-link">Learn More</a>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <img src="./img1.hero_files/wedding-1836315_1280.jpg" alt="Weddings, Anniversaries &amp; Special Occasions">
+                <div class="gallery-info">
+                    <span>Weddings, Anniversaries &amp; Special Occasions</span>
+                    <a href="http://127.0.0.1:5500/HTML%20FILES/about-weddings.html" class="gallery-link">Learn More</a>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <img src="./img1.hero_files/cake-8470012_1280 (1).jpg" alt="Birthday parties &amp; celebrations">
+                <div class="gallery-info">
+                    <span>Birthday Parties &amp; Celebrations</span>
+                    <a href="http://127.0.0.1:5500/HTML%20FILES/about-birthday.html" class="gallery-link">Learn More</a>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <img src="./img1.hero_files/parade-4879243_1280.jpg" alt="Concerts, Festivals &amp; Live Performances">
+                <div class="gallery-info">
+                    <span>Concerts, Festivals &amp; Live Performances</span>
+                    <a href="http://127.0.0.1:5500/HTML%20FILES/about-concerts.html" class="gallery-link">Learn More</a>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <img src="./img1.hero_files/meeting-83519_1280.jpg" alt="Product Launches &amp; Promotional Events">
+                <div class="gallery-info">
+                    <span>Product Launches &amp; Promotional Events</span>
+                    <a href="http://127.0.0.1:5500/HTML%20FILES/about-product.html" class="gallery-link">Learn More</a>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <img src="./img1.hero_files/woman-4634314_1280.jpg" alt="Charity Events &amp; Fundraisers">
+                <div class="gallery-info">
+                    <span>Charity Events &amp; Fundraisers</span>
+                    <a href="http://127.0.0.1:5500/HTML%20FILES/about-charity.html" class="gallery-link">Learn More</a>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <img src="./img1.hero_files/catwalk-1840941_1280.jpg" alt="Fashion &amp; Art Shows">
+                <div class="gallery-info">
+                    <span>Fashion &amp; Art Shows</span>
+                    <a href="http://127.0.0.1:5500/HTML%20FILES/about-fashion.html" class="gallery-link">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-section reveal revealed">
+        <div class="video-bg-container">
+            <video autoplay="" muted="" loop="" playsinline="" class="video-bg">
+                <source src="../media/crew meeting.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay"></div>
+            <div class="team-content">
+                <h2>Meet Our Team</h2>
+                <p>
+                    At Radiant Affairs, our dedicated team brings together creativity, precision, and passion to deliver
+                    unforgettable events. We collaborate closely, ensuring every detail is handled with care and
+                    expertise. From planning to execution, our specialists work seamlessly to turn your vision into
+                    reality.
+                </p>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="./img1.hero_files/woman-7772193_1280.jpg" alt="Lead Planner">
+                        <div class="member-name-container">
+                            <span class="member-name">Alex Morgan</span>
+                            <a href="mailto:alex.morgan@radiantaffairs.com" class="email-icon" title="Contact Alex">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                        <span class="member-role">Lead Planner</span>
+                    </div>
+                    <div class="team-member">
+                        <img src="./img1.hero_files/portrait-4568762_1280.jpg" alt="Creative Director">
+                        <div class="member-name-container">
+                            <span class="member-name">Jamie Lee</span>
+                            <a href="mailto:jamie.lee@radiantaffairs.com" class="email-icon" title="Contact Jamie">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                        <span class="member-role">Creative Director</span>
+                    </div>
+                    <div class="team-member">
+                        <img src="./img1.hero_files/woman-7781266_1280.jpg" alt="Logistics Specialist">
+                        <div class="member-name-container">
+                            <span class="member-name">Taylor Smith</span>
+                            <a href="mailto:taylor.smith@radiantaffairs.com" class="email-icon" title="Contact Taylor">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                        <span class="member-role">Logistics Specialist</span>
+                    </div>
+                    <div class="team-member">
+                        <img src="./img1.hero_files/girl-5237508_1280.jpg" alt="Event Coordinator">
+                        <div class="member-name-container">
+                            <span class="member-name">Morgana Ray</span>
+                            <a href="mailto:morgana.ray@radiantaffairs.com" class="email-icon" title="Contact Morgana">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                        <span class="member-role">Event Coordinator</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Highlights Section -->
+    <section class="highlights-section reveal revealed">
+        <h2>Clients, Spotlights, Travels &amp; News</h2>
+        <div class="highlights-grid">
+            <!-- Client Spotlight -->
+            <div class="highlight-card">
+                <img src="./img1.hero_files/katie-melua-522590_1280.jpg" alt="Client Event">
+                <div class="highlight-info">
+                    <h3>Client Spotlight: The Johnson Gala</h3>
+                    <p>
+                        A stunning evening for the Johnson family, featuring custom décor and live entertainment. See
+                        how we made their vision shine!
+                    </p>
+                    <a href="http://127.0.0.1:5500/HTML%20FILES/blog-johnson-gala.html" class="highlight-link">Read Blog</a>
+                </div>
+            </div>
+            <!-- Event Spotlight -->
+            <div class="highlight-card">
+                <img src="./img1.hero_files/summer-635247_1280.jpg" alt="Event Spotlight">
+                <div class="highlight-info">
+                    <h3>Spotlight: Summer Festival</h3>
+                    <p>
+                        Our annual Summer Festival brought together music, food, and fun for over 2,000 guests. Relive
+                        the highlights!
+                    </p>
+                    <a href="http://127.0.0.1:5500/HTML%20FILES/news-summer-festival.html" class="highlight-link">See News</a>
+                </div>
+            </div>
+            <!-- Travel Feature -->
+            <div class="highlight-card">
+                <img src="./img1.hero_files/wedding-dress-433655_1280.jpg" alt="Travel Feature">
+                <div class="highlight-info">
+                    <h3>Travels: Destination Wedding in Paris</h3>
+                    <p>
+                        From planning to execution, our team traveled to Paris for a magical destination wedding.
+                        Discover the journey!
+                    </p>
+                    <a href="http://127.0.0.1:5500/HTML%20FILES/blog-paris-wedding.html" class="highlight-link">View Blog</a>
+                </div>
+            </div>
+            <!-- News & Updates -->
+            <div class="highlight-card">
+                <img src="./img1.hero_files/1.png" alt="News Update">
+                <div class="highlight-info">
+                    <h3>News: Radiant Affairs Wins Best Planner Award</h3>
+                    <p>
+                        We’re honored to be recognized as the region’s top event planners. Read about our latest
+                        achievements and upcoming projects.
+                    </p>
+                    <a href="http://127.0.0.1:5500/HTML%20FILES/news-award.html" class="highlight-link">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Bloggers & Influencers Section -->
+    <section class="bloggers-section reveal revealed" id="bloggers">
+        <div class="bloggers-header">
+            <img src="./img1.hero_files/logo.jpeg" alt="Radiant Affairs Logo" class="bloggers-logo">
+            <h2>Featured By Top Bloggers &amp; Influencers</h2>
+            <p class="bloggers-intro">
+                Honored by leading voices in the event industry, our work has been showcased by renowned magazines and
+                influencers. Explore our features and collaborations below.
+            </p>
+        </div>
+        <div class="bloggers-grid">
+            <div class="blogger-card">
+                <div class="blogger-logo-wrap">
+                    <img src="./img1.hero_files/badge-vogue-logo.webp" alt="Vogue" class="blogger-logo">
+                </div>
+                <div class="blogger-info">
+                    <h3>Vogue</h3>
+                    <p>
+                        Vogue highlighted our creative event designs in their "Best Modern Planners" feature. Read their
+                        article about our unique approach to luxury celebrations.
+                    </p>
+                    <a href="https://www.vogue.com/article/best-modern-event-planners" target="_blank" class="blogger-link">Read Feature</a>
+                </div>
+            </div>
+            <div class="blogger-card">
+                <div class="blogger-logo-wrap">
+                    <img src="./img1.hero_files/badge-bazaar-logo.webp" alt="Bazaar" class="blogger-logo">
+                </div>
+                <div class="blogger-info">
+                    <h3>Bazaar</h3>
+                    <p>
+                        Bazaar collaborated with us for their annual influencer gala, praising our seamless coordination
+                        and attention to detail in their event recap.
+                    </p>
+                    <a href="https://www.badge.com/blog/influencer-gala-recap" target="_blank" class="blogger-link">See
+                        Collaboration</a>
+                </div>
+            </div>
+            <div class="blogger-card">
+                <div class="blogger-logo-wrap">
+                    <img src="./img1.hero_files/badge-martha-stewart-weddings-logo.webp" alt="Martha Stewart Weddings" class="blogger-logo">
+                </div>
+                <div class="blogger-info">
+                    <h3>Martha Stewart Weddings</h3>
+                    <p>
+                        Martha Stewart Weddings featured our founder in their "Spotlight on Innovators" series, sharing
+                        insights on trends and the future of event planning.
+                    </p>
+                    <a href="https://www.eventmag.com/spotlight-innovators" target="_blank" class="blogger-link">View
+                        Interview</a>
+                </div>
+            </div>
+            <div class="blogger-card">
+                <div class="blogger-logo-wrap">
+                    <img src="./img1.hero_files/Brides_Mag_Logo.webp" alt="Brides" class="blogger-logo">
+                </div>
+                <div class="blogger-info">
+                    <h3>Brides</h3>
+                    <p>
+                        Brides collaborated with us for their luxury bridal showcase, featuring our signature décor and
+                        planning expertise.
+                    </p>
+                    <a href="https://www.brides.com/bridal-showcase" target="_blank" class="blogger-link">See
+                        Feature</a>
+                </div>
+            </div>
+            <div class="blogger-card">
+                <div class="blogger-logo-wrap">
+                    <img src="./img1.hero_files/over-the-moon-stacked.webp" alt="Over-the-moon-stacked" class="blogger-logo">
+                </div>
+                <div class="blogger-info">
+                    <h3>Over-the-moon-stacked</h3>
+                    <p>
+                        Over-the-moon-stacked interviewed our team for their podcast, discussing trends in event
+                        technology and guest experience.
+                    </p>
+                    <a href="https://www.partyguru.com/podcast/radiant-affairs" target="_blank" class="blogger-link">Listen Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accordion Section -->
+    <div class="what-we-do-section reveal revealed">
+        <div class="what-we-do-grid">
+            <!-- Left Side Accordion List -->
+            <div class="accordion-list" id="what-we-inspire">
+                <h2>What We Inspire</h2>
+                <div class="accordion">
+                    <!-- Item 1 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            BESPOKE &amp; PERSONALISED SERVICE
+                            <span>+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>"Decor That's Unapologetically You" captures our commitment to tailoring everything to
+                                the
+                                individual client. From the initial consultation to the final setup, we ensure that your
+                                vision
+                                guides every step of the process. This bespoke approach means your event in Cheshire or
+                                beyond
+                                will be truly unique.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            VARIETY OF STYLES
+                            <span>+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>We offer a wide range of decor styles, from classic and elegant to modern and chic.
+                                Whatever your
+                                preference, we can match your vision perfectly.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            FLEXIBILITY
+                            <span>+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Our flexible approach ensures that we adapt to your requirements, budget, and venue
+                                specifics
+                                without compromising quality or creativity.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="accordion-item active">
+                        <div class="accordion-header">
+                            UNIQUE DECOR
+                            <span>–</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Every detail matters. We provide unique and personalized decor elements that make your
+                                event
+                                unforgettable.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            SUSTAINABLE PRACTICES
+                            <span>+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                                We prioritize eco-friendly materials and sustainable sourcing for all our decor and
+                                event elements.
+                                Our commitment to green practices ensures your celebration is beautiful and responsible,
+                                minimizing
+                                environmental impact without sacrificing style.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            ON-SITE SUPPORT
+                            <span>+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                                Our team provides hands-on support throughout your event, from setup to breakdown. We
+                                handle
+                                last-minute adjustments and ensure every detail is perfect, so you can relax and enjoy
+                                your special
+                                day.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 7 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            TECHNOLOGY INTEGRATION
+                            <span>+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                                We incorporate the latest event technology, including lighting, sound, and interactive
+                                displays, to
+                                elevate your guest experience. Our tech-savvy approach brings innovation and excitement
+                                to every
+                                occasion.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Side Image -->
+            <div class="accordion-photo">
+                <img src="./img1.hero_files/vienna-82647_1280.jpg" alt="corporate event">
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="faq-section reveal revealed" id="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-slider">
+            <div class="faq-slide" style="background-image: url(&#39;../media/student-849824_1280.jpg&#39;);">
+                <h3>What types of events do you plan?</h3>
+                <p>We plan a wide variety of events including weddings, corporate functions, birthdays, product
+                    launches, charity galas, festivals, and more. Every event is tailored to your unique vision and
+                    needs.</p>
+            </div>
+            <div class="faq-slide" style="background-image: url(&#39;../media/guitar-2366368_1280.jpg&#39;);">
+                <h3>Do you offer sustainable and eco-friendly options?</h3>
+                <p>Yes! We prioritize sustainable practices, using eco-friendly materials and vendors whenever possible
+                    to minimize environmental impact while maintaining style and quality.</p>
+            </div>
+            <div class="faq-slide" style="background-image: url(&#39;../media/light-bulbs-1875384_1280.jpg&#39;);">
+                <h3>Can you work with my budget?</h3>
+                <p>Absolutely. We offer flexible packages and creative solutions to deliver memorable events within your
+                    budget, without compromising on quality or experience.</p>
+            </div>
+            <div class="faq-slide active" style="background-image: url(&#39;../media/harmony-451329_1280.jpg&#39;);">
+                <h3>How does your team support events on the day?</h3>
+                <p>Our team provides full on-site support, handling setup, coordination, troubleshooting, and breakdown
+                    so you can relax and enjoy your event stress-free.</p>
+            </div>
+            <div class="faq-slide" style="background-image: url(&#39;../media/sheet-music-8578311_1280.jpg&#39;);">
+                <h3>Do you collaborate with other vendors and influencers?</h3>
+                <p>Yes, we regularly collaborate with top vendors, bloggers, and influencers to bring fresh ideas and
+                    added value to your event. Our network ensures you get the best in the industry.</p>
+            </div>
+        </div>
+        <div class="faq-controls">
+            <button id="faq-prev">← Prev</button>
+            <button id="faq-next">Next →</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section contact-bg">
+        <video autoplay="" muted="" loop="" playsinline="" class="contact-video-bg">
+            <source src="../media/contact-bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="contact-overlay"></div>
+        <div class="contact-grid">
+            <!-- Contact Form -->
+            <form class="contact-form">
+                <h2>Contact Us</h2>
+                <p>We’d love to hear from you! Fill out the form and our team will get back to you soon.</p>
+                <input type="text" name="name" placeholder="Your Name" required="">
+                <input type="email" name="email" placeholder="Your Email" required="">
+                <textarea name="message" rows="5" placeholder="Your Message" required=""></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <!-- Address Info -->
+            <div class="contact-info">
+                <h3>Our Address</h3>
+                <p>
+                    Radiant Affairs<br>
+                    123 Event Avenue<br>
+                    Victoria Island, Lagos<br>
+                    Nigeria.
+                </p>
+                <p>
+                    <strong>Email:</strong> info@radiantaffairs.com<br>
+                    <strong>Phone:</strong> +234 800 000 0000
+                </p>
+                <div class="contact-socials">
+                    <a href="http://127.0.0.1:5500/HTML%20FILES/index.html#"><i class="fab fa-instagram"></i></a>
+                    <a href="http://127.0.0.1:5500/HTML%20FILES/index.html#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="http://127.0.0.1:5500/HTML%20FILES/index.html#"><i class="fab fa-twitter"></i></a>
+                    <a href="http://127.0.0.1:5500/HTML%20FILES/index.html#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <div id="scrollToTop" class="scroll-to-top">
+        ⇧
+    </div>
+
+    <!-- At the bottom of your HTML file -->
+    <div id="site-footer"><style>
+    /* General footer styling */
+    .site-footer {
+        background: #F7F2EB;
+        /* Warm, muted off-white */
+        color: #7a5b47;
+        /* Soft brown for text */
+        text-align: center;
+        padding: 40px 20px 20px;
+        font-family: "Georgia", serif;
+    }
+
+    .footer-top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 30px;
+    }
+
+    .footer-logo img {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+    .footer-signup h2,
+    .footer-info h2 {
+        color: #b49b87;
+        /* Muted gold for headings */
+        font-size: 22px;
+        margin-bottom: 10px;
+        font-weight: normal;
+        letter-spacing: 2px;
+    }
+
+    .footer-signup p,
+    .footer-signup small,
+    .footer-info ul li em {
+        color: #8d7a6b;
+        /* Muted taupe for details */
+        max-width: 350px;
+        margin: 0 auto 20px;
+        line-height: 1.5;
+        font-size: 15px;
+    }
+
+    .signup-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+
+    .signup-form input[type="email"] {
+        padding: 12px;
+        width: 260px;
+        max-width: 100%;
+        border: none;
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .signup-form button {
+        padding: 12px 30px;
+        background: transparent;
+        color: #b49b87;
+        border: 2px solid #b49b87;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .signup-form button:hover {
+        background: #b49b87;
+        color: #fff;
+    }
+
+    /* Info section */
+    .footer-info ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-info ul li {
+        margin-bottom: 8px;
+    }
+
+    .footer-info ul li a {
+        color: #b49b87;
+        text-decoration: underline;
+    }
+
+    .footer-info ul li em {
+        font-style: italic;
+        font-size: 14px;
+    }
+
+    /* Logos row */
+    .footer-logos {
+        margin: 30px 0;
+    }
+
+    .footer-logos img {
+        height: 60px;
+        margin: 0 10px;
+    }
+
+    /* Bottom */
+    .footer-bottom {
+        background-color: #e9e5dc;
+        /* Soft sand for bottom bar */
+        color: #7a5b47;
+    }
+
+    .footer-bottom a {
+        color: #b49b87;
+        text-decoration: underline;
+    }
+
+    .design-credit {
+        margin-top: 8px;
+        font-weight: bold;
+        color: #b49b87;
+    }
+
+    /* Toast notification */
+    .signup-toast {
+        position: fixed;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--bright-lime-tint, #E7F59E);
+        color: var(--main-text, #1A1F36);
+        padding: 16px 32px;
+        border-radius: 8px;
+        box-shadow: 0 4px 24px rgba(176, 190, 169, 0.18);
+        font-size: 1.08rem;
+        font-weight: 600;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s;
+        z-index: 9999;
+    }
+
+    .signup-toast.show {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .footer-top {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .signup-form {
+            width: 100%;
+        }
+
+        .footer-logos img {
+            height: 50px;
+            margin: 5px;
+        }
+    }
+</style>
+
+
+<footer class="site-footer">
+    <div class="footer-top">
+        <div class="footer-logo">
+            <img src="./img1.hero_files/logo.jpeg" alt="RADIANT AFFAIRS Logo">
+        </div>
+
+        <div class="footer-signup">
+            <h2>Sign Up</h2>
+            <p>
+                Sign up to our newsletter to receive a fabulous flow of wedding decor and exclusive offers
+                straight to your inbox
+            </p>
+            <form class="signup-form">
+                <input type="email" placeholder="Email Address" required="">
+                <button type="submit">SIGN UP</button>
+            </form>
+            <small>We respect your privacy.</small>
+        </div>
+
+        <div class="footer-info">
+            <h2>INFO</h2>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/HTML%20FILES/index.html#">Contact Us</a></li>
+                <li><a href="http://127.0.0.1:5500/HTML%20FILES/index.html#faqs">FAQs</a></li>
+                <li><a href="http://127.0.0.1:5500/HTML%20FILES/index.html#">Suppliers We Love</a></li>
+                <li><em>Based in Lagos, Nigeria</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-logos">
+        <img src="./img1.hero_files/badge-vogue-logo.webp" alt="Badge 1">
+        <img src="./img1.hero_files/badge-bazaar-logo.webp" alt="Badge 2">
+        <img src="./img1.hero_files/badge-martha-stewart-weddings-logo.webp" alt="Badge 3">
+        <img src="./img1.hero_files/over-the-moon-stacked.webp" alt="Badge 4">
+        <img src="./img1.hero_files/Brides_Mag_Logo.webp" alt="Badge 5">
+        <!-- <img src="badge6.png" alt="Badge 6"> -->
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            © 2025 The Radiant Affairs Ltd. is registered in Nigeria &amp; Aptech Institute no. 12208028 |
+            <a href="http://127.0.0.1:5500/HTML%20FILES/index.html#">Terms</a> | <a href="http://127.0.0.1:5500/HTML%20FILES/index.html#">Privacy &amp; Cookies</a> |
+        </p>
+        <p class="design-credit">Design by Clement&amp;Co</p>
+    </div>
+    <div id="signup-toast" class="signup-toast">Thanks for signing up!</div>
+</footer>
+
+<script>
+    document.querySelector(".signup-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        const email = this.querySelector("input[type='email']").value;
+        if (email) {
+            const toast = document.getElementById("signup-toast");
+            toast.textContent = "Thanks for signing up, " + email + "!";
+            toast.classList.add("show");
+            setTimeout(() => {
+                toast.classList.remove("show");
+            }, 3500);
+            this.reset();
+        }
+    });
+</script></div>
+    <script src="./img1.hero_files/index.js.download"></script>
+
+    <script>
+        // Load header and run dropdown JS after fetch
+        fetch('../HTML FILES/header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('site-header').innerHTML = data;
+                // Dropdown menu toggle for SERVICES
+                const serviceDropdown = document.querySelector('.dropdown');
+                const serviceToggle = document.querySelector('.dropdown-toggle');
+                const serviceMenu = document.querySelector('.dropdown-menu');
+                if (serviceToggle && serviceMenu) {
+                    serviceToggle.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        serviceMenu.style.display = serviceMenu.style.display === 'block' ? 'none' : 'block';
+                    });
+                    document.addEventListener('click', function (e) {
+                        if (!serviceDropdown.contains(e.target)) {
+                            serviceMenu.style.display = 'none';
+                        }
+                    });
+                }
+                // Mobile menu toggle
+                const toggle = document.querySelector('.menu-toggle');
+                const nav = document.querySelector('.header-nav');
+                if (toggle && nav) {
+                    toggle.addEventListener('click', () => {
+                        nav.classList.toggle('active');
+                    });
+                }
+            });
+        // Load footer
+        fetch('../HTML FILES/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('site-footer').innerHTML = data;
+            });
+    </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

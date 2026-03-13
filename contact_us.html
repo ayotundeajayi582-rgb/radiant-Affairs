@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us • Radiant Affairs</title>
+  <link rel="stylesheet" href="/css/contact_us.css">
+   <link rel="icon" href="/html/images/raidiant.logo.jpeg" type="image/jpeg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Contact Section -->
+  <section class="contact-container scroll-animate">
+    <div class="logo">
+    <img src="/html/images/raidiant.logo.jpeg" alt="Radiant Affairs Logo">
+    </div>
+    <h1>Plan Your Perfect Event ✨</h1>
+    <p class="intro">Tell us your vision, and we’ll bring it to life with breathtaking decorations, venues, catering, and more.</p>
+
+    <div class="contact-grid">
+      <!-- Contact Info -->
+      <div class="contact-info scroll-animate">
+        <h2>Get in Touch</h2>
+        <p><strong>Phone:</strong> +234 801 234 5678</p>
+        <p><strong>Email:</strong> info@radiantaffairs.com</p>
+        <p><strong>Location:</strong> Lagos, Nigeria</p>
+
+        <ul class="socials">
+          <li><a href="#facebook">Facebook</a></li>
+          <li><a href="#instagram">Instagram</a></li>
+          <li><a href="#twitter">Twitter</a></li>
+        </ul>
+
+        <!-- Google Maps -->
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7923.7715!2d3.3792!3d6.5244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf50bba0f9a0f%3A0xf34d1e8cd6f50a7!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1692890000000"
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+
+        <div class="info-card">
+  <h3>Why Choose Radiant Affairs? 💫</h3>
+  <p>
+    From elegant decorations to mouth-watering catering and top-class entertainment, 
+    we create experiences that linger in your guests’ hearts long after the event. 
+    ✨ Every detail is tailored to <strong>your vision</strong>.
+  </p>
+</div>
+
+ <div class="slideshow-container">
+  <img src="/html/images/img5.contactus.jpg" class="slide fade" alt="Event 1">
+  <img src="/html/images/img3.contactus.jpg" class="slide fade" alt="Event 2">
+  <img src="/html/images/img3.eventplanner.webp" class="slide fade" alt="Event 3">
+  <img src="/html/images/img4.contactus.jpg" class="slide fade" alt="Event 4">
+  <img src="/html/images/img1.contactus.png" class="slide fade" alt="Event 5">
+  <img src="/html/images/img2.contactus.jpg" class="slide fade" alt="Event 6">
+ </div>
+
+</div>
+
+<!-- Contact Form with Invoice -->
+<div class="contact-form scroll-animate">
+  <form id="eventForm">
+    <h2>Event Request Form</h2>
+
+    <div class="form-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Your Email</label>
+      <input type="email" id="email" required>
+    </div>
+
+    <!-- Service Selection -->
+    <h3>Choose Services</h3>
+    <div class="form-group services-grid">
+
+      <!-- Decorations -->
+      <div class="service-box">
+        <h3>Decorations</h3>
+        <label>
+          <input type="radio" name="decorations" value="Basic Decorations" data-price="30000"> Basic - ₦30,000
+        </label>
+        <label>
+          <input type="radio" name="decorations" value="Luxury Decorations" data-price="50000"> Luxury - ₦50,000
+        </label>
+        <label>
+          <input type="radio" name="decorations" value="Premium Decorations" data-price="80000"> Premium - ₦80,000
+        </label>
+      </div>
+
+      <!-- Hall Booking -->
+      <div class="service-box">
+        <h3>Hall Booking</h3>
+        <label>
+          <input type="radio" name="hall" value="Small Hall" data-price="100000"> Small Hall - ₦100,000
+        </label>
+        <label>
+          <input type="radio" name="hall" value="Medium Hall" data-price="150000"> Medium Hall - ₦150,000
+        </label>
+        <label>
+          <input type="radio" name="hall" value="Grand Hall" data-price="250000"> Grand Hall - ₦250,000
+        </label>
+      </div>
+
+      <!-- Catering -->
+      <div class="service-box">
+        <h3>Catering</h3>
+        <label>
+          <input type="radio" name="catering" value="Buffet" data-price="100000"> Buffet - ₦100,000
+        </label>
+        <label>
+          <input type="radio" name="catering" value="3-Course Meal" data-price="120000"> 3-Course Meal - ₦120,000
+        </label>
+        <label>
+          <input type="radio" name="catering" value="Full Service" data-price="200000"> Full Service - ₦200,000
+        </label>
+      </div>
+
+      <!-- Entertainment -->
+      <div class="service-box">
+        <h3>Entertainment</h3>
+        <label>
+          <input type="radio" name="entertainment" value="DJ" data-price="70000"> DJ - ₦70,000
+        </label>
+        <label>
+          <input type="radio" name="entertainment" value="Live Band" data-price="120000"> Live Band - ₦120,000
+        </label>
+      </div>
+
+      <!-- Photography -->
+      <div class="service-box">
+        <h3>Photography</h3>
+        <label>
+          <input type="radio" name="photography" value="Standard Photography" data-price="40000"> Standard - ₦40,000
+        </label>
+        <label>
+          <input type="radio" name="photography" value="Premium Photography" data-price="80000"> Premium - ₦80,000
+        </label>
+      </div>
+    </div>
+
+    <!-- Invoice Preview -->
+    <div class="invoice-card" id="invoice">
+      <h3>🧾 Invoice Preview</h3>
+      <ul id="invoiceList"></ul>
+      <p class="total">Total: <span id="totalAmount">₦0</span></p>
+      <button type="button" id="clearInvoice" class="btn">Clear Invoice</button>
+    </div>
+
+    <button type="submit" class="btn">Send Inquiry</button>
+    <p id="successMessage" class="success">🎉 Thank you! We’ll get back to you shortly 💌</p>
+  </form>
+</div>
+
+
+    </div>
+  </section>
+
+  <script src="/js/contact_us.js"></script>
+</body>
+</html>

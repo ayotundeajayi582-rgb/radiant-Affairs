@@ -1,0 +1,311 @@
+:root {
+  --muted-green: #92AA83;
+  --soft-pastel-green: #E0EDC5;
+  --bright-lime-tint: #E7F59E;
+  --sage-gray-green: #B0BEA9;
+  --off-white: #F1F7EE;
+  --main-text: #1A1F36;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--sage-gray-green);
+  color: var(--muted-green);
+}
+
+.logo{
+  margin-right: 2rem;
+   display: flex;
+  flex-direction: column;   
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo img {
+  height: 200px;   
+  width: auto;   
+  display: block;
+  margin-bottom: 0.5rem;
+  animation: floatIn 1s ease forwards;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-container h1 {
+  font-size: 2.5rem;
+  color: var(--bright-lime-tint);
+  margin-bottom: 15px;
+}
+
+.contact-container .intro {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  color: var(--main-text);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.contact-info {
+  background: var(--off-white);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.contact-info h2 {
+  margin-bottom: 15px;
+  color: var(--main-text);
+}
+
+.contact-info .socials {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.contact-info .socials li {
+  margin-bottom: 10px;
+}
+
+.contact-info .socials a {
+  text-decoration: none;
+  color: var(--main-text);
+  font-weight: 500;
+}
+
+.map-container {
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-form {
+  background: var(--off-white);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.contact-form h2 {
+  text-align: center;
+  color: var(--main-text);
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.form-group small {
+  display: block;
+  color: #777;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+.btn {
+  background:var(--muted-green);
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 100%;
+}
+
+.btn:hover {
+  background: var(--main-text);
+}
+
+.success {
+  display: none;
+  color: var(--main-text);
+  margin-top: 15px;
+  text-align: center;
+}
+
+.invoice-card {
+  margin: 20px 0;
+  padding: 15px;
+  background: var(--soft-pastel-green);
+  border: 2px solid var(--muted-green);
+  border-radius: 10px;
+}
+
+.invoice-card h3 {
+  margin-bottom: 10px;
+  color: var(--sage-gray-green);
+}
+
+.invoice-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.invoice-card ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.invoice-card .total {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+/* Scroll animations */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+.scroll-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: hsl(var(--hue, 200), 70%, 50%);
+  top: -10px;
+  animation: fall linear forwards;
+  border-radius: 50%;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(720deg);
+  }
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.service-box {
+  background: var(--off-white);
+  border: 2px solid var(--muted-green);
+  border-radius: 12px;
+  padding: 15px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.service-box h3 {
+  margin-bottom: 10px;
+  color: var(--main-text);
+}
+
+.service-box label {
+  display: block;
+  margin: 8px 0;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+/* Clear Invoice Button */
+#clearInvoice {
+  margin-top: 10px;
+  background: var(--sage-gray-green);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#clearInvoice:hover {
+  background: var(--muted-green);
+}
+
+/* Slideshow */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  height: 250px;
+  margin-top: 30px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+/* Info Card */
+.info-card {
+  background: var(--soft-pastel-green);
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  animation: fadeIn 1.5s ease;
+}
+
+.info-card h3 {
+  margin-bottom: 10px;
+  color: var(--main-text);
+  font-size: 1.4rem;
+}
+
+.info-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--main-text);
+}
+
+/* Subtle fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
